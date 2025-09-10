@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UCF-Madagascar</title>
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="head">
-        <header>
+        <header id="head_frame">
             <div class="logo_parent"><img src="/img/Logo.png" alt=""></div>
             
             <nav>
@@ -16,11 +16,21 @@
                     <!-- <ion-icon name="search"></ion-icon>  --><ion-icon name="search"></ion-icon>
                     Recherche
                 </a>
-                <a href="#" class="mn">
+                <a href="#" class="mn" id="btn_menu">
                     <ion-icon name="menu"></ion-icon>
                     Menu
                 </a>
             </nav>
+            <div class="nav_popup" id="pop_up">
+                <nav class="nav_head">
+                    <a href="menu.html" class="a_head">Acceuil</a>
+                    <a href="#" class="a_head">A propos</a>
+                    <a href="academy.html" class="a_head">Academiques</a>
+                    <a href="#" class="a_head">Admissions</a>
+                    <a href="#" class="a_head">Actualité & Evénement</a>
+                    <a href="#" class="a_head">Contact</a>
+                </nav>
+            </div>
         </header>
         <section class="slogan">
             <div class="preps">
@@ -165,9 +175,9 @@
         <section class="foot_content">
             <nav class="foot_nav">
                 <h3>Liens Rapides</h3>
-                <a href="#" class="a_foot">Acceuil</a>
+                <a href="menu.html" class="a_foot">Acceuil</a>
                 <a href="#" class="a_foot">A propos</a>
-                <a href="#" class="a_foot">Academiques</a>
+                <a href="academy.html" class="a_foot">Academiques</a>
                 <a href="#" class="a_foot">Admissions</a>
                 <a href="#" class="a_foot">Actualité & Evénement</a>
                 <a href="#" class="a_foot">Contact</a>
@@ -179,6 +189,6 @@
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="/menu.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
