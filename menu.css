@@ -237,7 +237,7 @@ button{
 }
 .informatxt{
     font-size: 1.9em;
-    margin-top: 120%;
+    margin-top: 100%;
     margin-bottom: 10px;
 }
 /* .txtinfo{
@@ -322,7 +322,7 @@ h2{
     margin-bottom: 0;
 }
 .nom{
-    color: black;
+    color: rgb(60, 179, 60);
 }
 .txtemoin{
     color: rgba(0, 0, 0, 0.407);
@@ -334,7 +334,8 @@ h2{
 footer{
     height: 20%;
     background: black;
-    padding: 100px;
+    padding: 50px 100px;
+    color: white;
 }
 
 @media (max-width: 600px) {
