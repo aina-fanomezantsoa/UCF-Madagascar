@@ -7,32 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="head">
+    <section class="head" id="head">
         <header id="head_frame">
             <div class="logo_parent"><img src="/img/Logo.png" alt=""></div>
-            
-            <nav>
-                <a href="#" class="reach">
-                    <!-- <ion-icon name="search"></ion-icon>  --><ion-icon name="search"></ion-icon>
-                    Recherche
-                </a>
-                <a href="#" class="mn" id="btn_menu">
-                    <ion-icon name="menu"></ion-icon>
-                    Menu
-                </a>
-            </nav>
-            <div class="nav_popup" id="pop_up">
-                <nav class="nav_head">
-                    <a href="menu.html" class="a_head">Acceuil</a>
-                    <a href="#" class="a_head">A propos</a>
-                    <a href="academy.html" class="a_head">Academiques</a>
-                    <a href="#" class="a_head">Admissions</a>
-                    <a href="#" class="a_head">Actualité & Evénement</a>
-                    <a href="#" class="a_head">Contact</a>
+            <div class="nav_op">
+                <nav>
+                    <div id="barRecherche">
+                        <input type="text" placeholder="Rechercher...">
+                        <ion-icon name="search"></ion-icon>
+                    </div>
+                    <a href="#" class="mn" id="btn_menu">
+                        <ion-icon name="menu"></ion-icon>
+                        Menu
+                    </a>
                 </nav>
+                <div class="nav_popup" id="pop_up">
+                    <nav class="nav_head">
+                        <a href="#head" class="a_head" id="navAcceuil">Acceuil</a>
+                        <a href="#about" class="a_head" id="navAbout">A propos</a>
+                        <a href="#historique" class="a_head">Historique</a>
+                        <a href="#formation" class="a_head">Nos formations</a>
+                        <a href="#contact" class="a_head">Contact</a>
+                    </nav>
+                </div>      
             </div>
+            
         </header>
-        <section class="slogan">
+        <section class="slogan" id="slogan">
             <div class="preps">
                 <h1>"  Pax  et  Veritas "</h1>
                 <p>Une éducation d'excellence, ancrée dans les valeurs Catholiques.</p>
@@ -41,14 +42,14 @@
             
         </section>
     </section>
-    <section class="presentation">
+    <section class="presentation" id="about">
         <div class="cont">
             <p class="ppre">Première Université Catholique de Fianarantsoa, nous formons <br>les leaders de demain avec une pédagogie innovante et un engagement éthique.</p>
-            <a href="#" class="decouvrir">Découvrir <ion-icon name="arrow-forward" class="icodec"></ion-icon></a>
+            <a href="#aventage" class="decouvrir" id="decouvrir">Découvrir <ion-icon name="arrow-forward" class="icodec"></ion-icon></a>
         </div>
         
     </section>
-    <section class="historique">
+    <section class="historique" id="historique">
         <h1 class="creat">Historique</h1>
         <div class="hist1">
             <img src="/img/UCF.jpg" alt="" class="img1">
@@ -73,7 +74,7 @@
             <img src="/img/1st session.jpg" alt="" class="img2">
         </div>
     </section>
-    <section class="formation">
+    <section class="formation" id="formation">
         <h1 class="form1">Nos Formations</h1>
         <p class="format">L'Université Catholique de Fianarantsoa offre des formations de qualité conformes à l'enseignement de l'Evangile et de l'Eglise. L'Université accueille neanmoins des étudiants de tous horizons, catholiques ou non, au nom de l'oecumenisme.</p>
         <section class="fil">
@@ -119,11 +120,10 @@
             </div>
         </section>
     </section>
-    <section class="information">
+    <section class="information" id="aventage">
         <div class="infotxt">
             <h1 class="BS">Pourquoi choisir UCF-Madagascar?</h1>
             <p class="uni">L'Universite Catholique de Fianarantsoa propose une nouvelle aproche <br>aux inovation et aux savoir tout en respectant la parole de Dieu</p>
-
         </div>
     </section>
     <section class="aventage">
@@ -158,14 +158,6 @@
             <p class="pqlt">Notre réseau d'entreprises partenaires ouvre les portes du marché du travail. Dès la licence, stages et ateliers préparent activement votre avenir professionnel.</p>
         </div>       
     </section>
-    <section class="temoin">
-        <img src="/img/pr recteur.png" alt="" class="prRecteur">
-        <div class="temointext">
-            <h2 class="recteur">Pr. Recteur</h2>
-            <h1 class="nom">Lorem ipsum dolor</h1>
-            <p class="txtemoin">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dignissimos error illum quas? Dolores magni dolorum quod eius nam qui non ut veritatis quia voluptatem! Soluta accusamus fuga doloribus sunt!"</p>
-        </div>
-    </section>
     <footer>
         <section class="foot_text">
             <h2 class="foot_title">UCF-Madagascar</h2>
@@ -175,11 +167,10 @@
         <section class="foot_content">
             <nav class="foot_nav">
                 <h3>Liens Rapides</h3>
-                <a href="menu.html" class="a_foot">Acceuil</a>
+                <a href="#head" class="a_foot" id="navAcceuil">Acceuil</a>
                 <a href="#" class="a_foot">A propos</a>
-                <a href="academy.html" class="a_foot">Academiques</a>
-                <a href="#" class="a_foot">Admissions</a>
-                <a href="#" class="a_foot">Actualité & Evénement</a>
+                <a href="#" class="a_foot">Historique</a>
+                <a href="academy.html" class="a_foot">Nos Formations</a>
                 <a href="#" class="a_foot">Contact</a>
             </nav>
         </section>

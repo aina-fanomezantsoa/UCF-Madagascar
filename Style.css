@@ -2,10 +2,10 @@
     margin: 0;padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    overflow-x: hidden;
 }
 body{
     background: rgb(246, 245, 245);
+    overflow-x: hidden;
 }
 #my_popover{
     color: white;
@@ -30,37 +30,85 @@ header{
     display: flex;
     justify-content: space-between;
 }
+.nav_op{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+}
 nav{
     background: black;
     height: fit-content;
-    padding: 30px 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#barRecherche{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.723);
+    margin-right: 20px;
+    padding: 10px 20px;
+    border: 0.2px solid rgba(255, 255, 255, 0.629);
+    border-radius: 0.2rem;
+}
+input{
+    width: 100%;
+    border: none;
+    background: none;
+    color: white;
+}
+input:focus{
+    outline: none;
+    border: none;
 }
 .nav_head{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    text-align: center;
+    text-align: start;
 }
 .nav_popup{
     display: none;
     position: absolute;
     background-color: black;
-    width: fit-content;
-    padding: 0px 90px 10px;
-    transform: translate(351.3%,26%);
+    width: 620px;
+    height: fit-content;
+    /* padding: 0px 20px 10px; */
+    transform: translateY(80px);
     transition: 0.5s;
+}
+.menu_clicked{
+    display: block;
+}
+.focus{
+    color: green;
 }
 a{
     text-decoration: none;
     color: white;
     gap: 10px;
+    /* display: flex;
+    align-items: start; */
 }
 .mn{
-    padding: 5px 40px;
+    padding: 5px 30px;
     border-left: 2px solid rgba(255, 255, 255, 0.36);
+    display: flex;
+    align-items: center;
 }
 .reach{
     padding: 0 30px;
+}
+.bar_recherche{
+    width: 500px;
+    padding: 10px 20px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 0.2rem;
+    color: white;
 }
 ion-icon{
     vertical-align: middle;
@@ -146,6 +194,7 @@ button{
     display: flex;
     align-items: center;
     margin: 100px 0 150px;
+    overflow: hidden;
 }
 .img1{
     width: 600px;
@@ -320,34 +369,6 @@ h2{
     font-size: 2.5em;
     color: rgb(60, 179, 60);
 }
-.temoin{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 100px;
-}
-.temointext{
-    margin-left: 50px;
-}
-.prRecteur{
-    width: 30%;
-}
-.recteur{
-    color: rgba(0, 0, 0, 0.607);
-    font-size: 2em;
-    margin-bottom: 0;
-}
-.nom{
-    color: rgb(60, 179, 60);
-}
-.txtemoin{
-    color: rgba(0, 0, 0, 0.407);
-}
-.ap{
-    font-size: 5em;
-    color: rgb(60, 179, 60);
-}
 footer{
     display: flex;
     flex-direction: column;
@@ -376,6 +397,7 @@ footer{
 .foot_nav{
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 20px;
 }
 .foot_p{
@@ -399,11 +421,4 @@ footer{
     align-items: flex-start;
     gap: 10px;
   }
-  /* .hero {
-    font-size: 18px;
-    height: 200px;
-  }
-  .box {
-    flex: 1 1 100%;
-  } */
 }
