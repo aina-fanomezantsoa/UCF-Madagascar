@@ -36,7 +36,7 @@
         <section class="slogan" id="slogan">
             <div class="preps">
                 <h1>"  Pax  et  Veritas "</h1>
-                <p>Une éducation d'excellence, ancrée dans les valeurs Catholiques.</p>
+                <p class="slogan_paragraph">Une éducation d'excellence, ancrée dans les valeurs Catholiques.</p>
                 <button class="visit">Nos Formations</button>
             </div>
             
@@ -51,7 +51,7 @@
     </section>
     <section class="historique" id="historique">
         <h1 class="creat">Historique</h1>
-        <div class="hist1">
+        <div class="hist1 messe">
             <img src="/img/UCF.jpg" alt="" class="img1">
             <div class="txt1">
                 <h1 class="title1">Messe d'ouverture de l'annee scholaire 2024-2025(19 Novembre 2024)</h1>
@@ -158,6 +158,32 @@
             <p class="pqlt">Notre réseau d'entreprises partenaires ouvre les portes du marché du travail. Dès la licence, stages et ateliers préparent activement votre avenir professionnel.</p>
         </div>       
     </section>
+    <section class="contact" id="contact">
+        <div class="contact_box">
+            <h1 class="title_contact">Contactez-nous</h1>
+            <div class="c_contact">
+                <h4>Adresse</h4>
+                <p class="contact_content"><ion-icon name="location"></ion-icon>FARK Ambatomena</p>
+            </div>
+            <div class="c_contact">
+               <h4>Contact</h4>
+                <p class="contact_content"><ion-icon name="call"></ion-icon>0347428707</p>
+                <p class="contact_content"><ion-icon name="logo-facebook"></ion-icon>Université Catholique Fianarantsoa Madagascar</p>
+                <p class="contact_content"><ion-icon name="mail"></ion-icon>ucf-madagascar@gmail.com</p> 
+            </div>
+            
+        </div>
+        <div class="contact_form">
+            <div class="p_h1">
+                <h1 class="title_contact title_contact_form">Formulaire de contact</h1>
+                <p class="contact_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit!</p>
+            </div>
+            
+            <input type="text" placeholder="Objet" class="input_email" id="objet">
+            <textarea placeholder="Ecrivez..." class="text_box" id="message"></textarea>
+            <button class="btn_send" id="btnSend">Envoyer</button>
+        </div>
+    </section>
     <footer>
         <section class="foot_text">
             <h2 class="foot_title">UCF-Madagascar</h2>
@@ -168,16 +194,17 @@
             <nav class="foot_nav">
                 <h3>Liens Rapides</h3>
                 <a href="#head" class="a_foot" id="navAcceuil">Acceuil</a>
-                <a href="#" class="a_foot">A propos</a>
-                <a href="#" class="a_foot">Historique</a>
-                <a href="academy.html" class="a_foot">Nos Formations</a>
-                <a href="#" class="a_foot">Contact</a>
+                <a href="#about" class="a_foot">A propos</a>
+                <a href="#historique" class="a_foot">Historique</a>
+                <a href="#formation" class="a_foot">Nos Formations</a>
+                <a href="#contact" class="a_foot">Contact</a>
             </nav>
         </section>
         <img src="./img/logoUCF_blanc.png" alt="" class="logo_blanc">
         
     </footer>
     <!-- ionicons -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>

@@ -5,7 +5,7 @@
 }
 body{
     background: rgb(246, 245, 245);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 #my_popover{
     color: white;
@@ -74,7 +74,7 @@ input:focus{
     display: none;
     position: absolute;
     background-color: black;
-    width: 620px;
+    width: 615.63px;
     height: fit-content;
     /* padding: 0px 20px 10px; */
     transform: translateY(80px);
@@ -120,9 +120,11 @@ ion-icon{
     color: yellow;
 }
 .preps {
-    margin: 0 400px;
     text-align: center;
     color: rgba(255, 255, 255, 0.747);
+}
+.slogan_paragraph{
+    width: 400px;
 }
 p{
     font-size: 1.5em;
@@ -193,9 +195,13 @@ button{
 .hist1{
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 30px;
+    justify-content: center;
     margin: 100px 0 150px;
     overflow: hidden;
 }
+
 .img1{
     width: 600px;
     max-width: 600px;
@@ -208,7 +214,6 @@ button{
 }
 .img2{
     width: 600px;
-    margin-left: 50px;
     transition: 0.5s;
 }
 .img2:hover{
@@ -242,7 +247,7 @@ button{
 
 .formation{
     padding: 0 100px;
-    height: 100vh;
+    height: fit-content;
 }
 .format{
     color: rgba(0, 0, 0, 0.362);
@@ -250,17 +255,21 @@ button{
 }
 .fil{
     margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .form1{
-    padding: 0 0 10px;
+    padding: 0 0 20px;
     color: black;
 }
 .cont1{
     height: 400px;
-    width: 40%;
+    width: 300px;
+    min-width: 300px;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.118);
     padding: 20px;
-    margin: 10px;
+    /* margin: 10px; */
     background:linear-gradient(to bottom, transparent,rgb(0, 0, 0)), url(/img/bg\ 3.jpg);
     background-size: cover;
     background-position: center;
@@ -300,6 +309,12 @@ button{
 .cont4:hover{
     transform: scale(1.05);
 }
+.title1{
+    width: 550px;
+}
+.p1{
+    width: 550px;
+}
 .informatxt{
     font-size: 1.9em;
     margin-top: 100%;
@@ -315,6 +330,7 @@ button{
 }
 .fil{
     display: flex;
+    justify-content: center;
 }
 .information{
     display: flex;
@@ -322,7 +338,6 @@ button{
     justify-content: center;
     text-align: center;
     padding: 50px;
-    padding-top: 0;
 }
 .BS{
     color: rgb(60, 179, 60);
@@ -340,9 +355,9 @@ button{
 .aventage{
     max-width: 100%;
     margin: 20px 120px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .qlt{
     text-align: center;
@@ -350,6 +365,7 @@ button{
     border-radius: 2rem;
     transition: 0.5s;
     margin: 10px;
+    width: 400px;
 }
 .qlt:hover{
     box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.186);
@@ -368,6 +384,85 @@ h2{
     margin-bottom: 10px;
     font-size: 2.5em;
     color: rgb(60, 179, 60);
+}
+
+.contact{
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    min-width: 490px;
+}
+.contact_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-left: 5px solid rgb(60, 179, 60);
+
+}
+.contact_form{
+    padding: 50px;
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.353);
+    border-radius: 2rem;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.p_h1{
+    display: flex;
+    flex-direction: column;
+    gap: -5;
+}
+.c_contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.title_contact{
+    color: black;
+}
+.title_contact_form{
+    font-size: 2em;
+
+}
+.contact_content{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(0, 0, 0, 0.742);
+}
+.input_email{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    padding: 10px;
+    font-size: 0.8em;
+    color: black;
+}
+.input_email:focus{
+    outline: 1px solid black;
+}
+.text_box{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    padding: 10px;
+    font-size: 0.8em;
+    background: none;
+    resize: none;
+}
+.btn_send{
+    background: yellow;
+    margin: 0;
+    color: black;
 }
 footer{
     display: flex;
@@ -403,6 +498,7 @@ footer{
 .foot_p{
     font-size: 1em;
     width: 500px;
+    color: rgba(255, 255, 255, 0.752);
 }
 .logo_blanc{
     width: 500px;
@@ -410,15 +506,63 @@ footer{
     display: block;
     transform: translateY(-50%);
     transform: translateX(160%);
+    opacity: 20%;
+    display: none;
 }
 .a_foot{
     color: rgba(255, 255, 255, 0.752);
 }
 
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+@media (max-width: 1280px) {
+    .historique{
+        padding: 50px;
+        width: fit-content;
+    }
+    .hist1{
+        flex-wrap: wrap;
+    }
+    .messe{
+        flex-wrap: wrap-reverse;
+    }
+  h1{
+    font-size: 2.5em;
+    
   }
+  p{
+    font-size: 1.3em;
+  }
+  .visit{
+    font-size: 1em;
+  }
+}
+@media (max-width: 1049){
+    .contact{
+        padding: 50px;
+    }
+}
+@media (max-width: 808px){
+    #barRecherche{
+        display: none;
+    }
+    .mn{
+        border: none;
+    }
+    .nav_popup{
+        width: 194px;
+    }
+    /* .logo_blanc{
+        display: none;
+    }
+     */
+}
+@media (max-width: 600px){
+    .historique{
+        padding: 30px;
+    }
+    .title1{
+        font-size: 1.6em;
+    }
+    .p1{
+        font-size: 1em;
+    }
 }
