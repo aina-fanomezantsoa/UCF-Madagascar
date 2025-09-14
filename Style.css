@@ -464,53 +464,14 @@ h2{
     margin: 0;
     color: black;
 }
+.map{
+    margin: 0;
+    padding: 0;
+    height: 600px;
+}
 footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: first baseline;
-    height: 20%;
     background: black;
-    padding: 50px 100px;
     color: white;
-    gap: 50px;
-    overflow: hidden;
-    height: 550px;
-}
-.foot_text{
-    display: flex;
-    flex-direction: column;
-}
-.foot_title{
-    color: white;
-    font-size: 2em;
-}
-.foot_content{
-    display: flex;
-    align-items: first baseline;
-    gap: 50px;
-}
-.foot_nav{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
-}
-.foot_p{
-    font-size: 1em;
-    width: 500px;
-    color: rgba(255, 255, 255, 0.752);
-}
-.logo_blanc{
-    width: 500px;
-    position: absolute;
-    display: block;
-    transform: translateY(-50%);
-    transform: translateX(160%);
-    opacity: 20%;
-    display: none;
-}
-.a_foot{
-    color: rgba(255, 255, 255, 0.752);
 }
 
 @media (max-width: 1280px) {
