@@ -29,12 +29,18 @@ img{
 header{
     display: flex;
     justify-content: space-between;
+    /* position: absolute;
+     */
+    width: 100%;
 }
 .nav_op{
     display: flex;
     flex-direction: column;
     height: fit-content;
     width: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 110;
 }
 nav{
     background: black;
@@ -184,6 +190,7 @@ button{
     color: rgba(0, 0, 0, 0.711);
 }
 .historique{
+    width: 100%;
     padding: 100px;
     padding-bottom: 0;
 }
@@ -409,7 +416,7 @@ h2{
     padding: 50px;
     box-shadow: 0 3px 25px rgba(0, 0, 0, 0.353);
     border-radius: 2rem;
-    width: 55%;
+    width: 600px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -472,6 +479,39 @@ h2{
 footer{
     background: black;
     color: white;
+    padding: 80px 100px;
+}
+.info_footer{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.518);
+    padding-bottom: 50px;
+}
+.local_footer{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.local_a{
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.774);
+}
+.local_content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer_icon{
+    font-size: 2.5em;
+    color: yellow;
+}
+.end{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 @media (max-width: 1280px) {
@@ -501,6 +541,14 @@ footer{
         padding: 50px;
     }
 }
+@media (max-width: 937px){
+    .info_footer{
+        flex-direction: column;
+    }
+    .img1{
+        margin: 0;
+    }
+}
 @media (max-width: 808px){
     #barRecherche{
         display: none;
@@ -511,11 +559,14 @@ footer{
     .nav_popup{
         width: 194px;
     }
-    /* .logo_blanc{
-        display: none;
-    }
-     */
+    
 }
+@media (max-width: 700px){
+    .img1{
+        width: 70%;
+    }
+}
+
 @media (max-width: 600px){
     .historique{
         padding: 30px;
