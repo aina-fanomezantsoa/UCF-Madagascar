@@ -399,7 +399,7 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    min-width: 490px;
+    /* min-width: 490px; */
 }
 .contact_box{
     display: flex;
@@ -562,19 +562,106 @@ footer{
     
 }
 @media (max-width: 700px){
+    .historique{
+        width: 100%;
+    }
     .img1{
-        width: 70%;
+        width: 90%;
+    }
+    .img2{
+        width: 90%;
+    }
+    .historique{
+        padding: 30px;
+    }
+    .uni{
+        font-size: 1.2em;
     }
 }
 
 @media (max-width: 600px){
+    .cont{
+        padding: 10px;
+    }
+    .form1{
+        text-align: center;
+    }
+    .format{
+        text-align: center;
+    }
+    .formation{
+        padding: 50px;
+    }
+    .contact{
+        padding: 50px;
+    }
+    .aventage{
+        margin: 50px;
+    }
+    .infotxt{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .txt1{
+        width: 100%;
+    }
     .historique{
         padding: 30px;
     }
     .title1{
         font-size: 1.6em;
+        width: 100%;
     }
     .p1{
         font-size: 1em;
+        width: 100%;
+    }
+}
+@media (max-width: 514px){
+    .logo_parent{
+        margin: 0;
+    }
+    .contact{
+        max-width: 500px;
+        padding: 0 50px;
+        padding-bottom: 50px;
+    }
+    .contact_box{
+        padding: 20px;
+    }
+    .contact_form{
+        padding: 30px;
+        width: 400px;
+    }
+    footer{
+        padding: 50px;
+    }
+}
+@media(max-width: 488px){
+    .contact{
+        padding: 50px 20px;
+    }
+}
+@media (max-width: 415px){
+    .slogan{
+        width: 100%;
+    }
+    .preps{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .slogan_paragraph{
+        font-size: 1em;
+        width: 319px;
+    }
+}
+@media (max-width: 415px){
+    .title_contact{
+        font-size: 1.5em;
+    }
+    .contact_content{
+        font-size: 0.8em;
     }
 }

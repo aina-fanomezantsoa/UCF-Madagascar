@@ -3,7 +3,9 @@ const btnMenu = document.getElementById("btn_menu");
 const send = document.getElementById("btnSend");
 const objet =document.getElementById("objet");
 const message = document.getElementById("message");
-let email = "ainafanomezantsoa37@gmail.com"
+let email = "ainafanomezantsoa37@gmail.com";
+const formation = document.getElementById("formation");
+const btnFormation = document.getElementById("btnFormation");
 
 btnMenu.addEventListener("click", ()=>{
     navPopup.classList.toggle("menu_clicked");
@@ -34,3 +36,10 @@ function envoyerEmail(){
             });
     }
 }
+
+btnFormation.addEventListener("click", ()=>{
+    formation.scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+    });
+})
