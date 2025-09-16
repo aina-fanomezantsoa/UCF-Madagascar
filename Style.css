@@ -256,6 +256,11 @@ button{
     padding: 0 100px;
     height: fit-content;
 }
+.dossier{
+    color: rgba(0, 0, 255, 0.649);
+    text-decoration: underline;
+    cursor: pointer;
+}
 .format{
     color: rgba(0, 0, 0, 0.362);
     font-size: 1.2em;
@@ -664,4 +669,31 @@ footer{
     .contact_content{
         font-size: 0.8em;
     }
+}
+.hero_txt{
+    color: black;
+}
+.inscription_hero{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 500px;
+}
+.filiere{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin: 70px;
+    flex-wrap: wrap;
+}
+.m_filiere{
+    padding: 50px;
+    border-radius: 1rem;
+    width: 400px;
+}
+.m_filiere:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.186);
 }
