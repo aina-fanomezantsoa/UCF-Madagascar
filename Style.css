@@ -518,6 +518,14 @@ footer{
     justify-content: center;
     text-align: center;
 }
+@media (max-width: 1286px){
+    .m_filiere{
+        max-width: 500px;
+    }
+    .contact_form{
+        max-width: 500px;
+    }
+}
 
 @media (max-width: 1280px) {
     .historique{
@@ -552,6 +560,10 @@ footer{
     }
     .img1{
         margin: 0;
+    }
+    .must_content{
+        width: 60%;
+        min-width: 475px;
     }
 }
 @media (max-width: 808px){
@@ -621,6 +633,9 @@ footer{
         font-size: 1em;
         width: 100%;
     }
+    .must_content{
+        padding: 20px;
+    }
 }
 @media (max-width: 514px){
     .logo_parent{
@@ -670,6 +685,9 @@ footer{
         font-size: 0.8em;
     }
 }
+
+
+/* --------Inscription------------ */
 .hero_txt{
     color: black;
 }
@@ -681,6 +699,33 @@ footer{
     flex-direction: column;
     gap: 500px;
 }
+
+.admission{
+    padding-top: 30px;
+    width: 100%;
+    padding: 100px;
+}
+.admi_head{
+    padding-bottom: 30px;
+    border-bottom: 7px solid black;
+}
+.admi_title{
+    color: rgb(60, 179, 60);
+}
+.card_filiere{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.title_card{
+    font-size: 1.5em;
+    color: rgb(60, 179, 60);
+}
+.text_inscription{
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.567);
+}
 .filiere{
     display: flex;
     gap: 100px;
@@ -691,9 +736,24 @@ footer{
 .m_filiere{
     padding: 50px;
     border-radius: 1rem;
-    width: 400px;
+    width: 600px;
+    text-align: center;
+    cursor: pointer;
 }
 .m_filiere:hover{
     transform: scale(1.05);
     box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.186);
+}
+.must{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.must_content{
+    padding: 0 50px;
+    border-left: 5px solid yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }

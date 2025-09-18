@@ -36,10 +36,3 @@ function envoyerEmail(){
             });
     }
 }
-
-btnFormation.addEventListener("click", ()=>{
-    formation.scrollIntoView({
-        behavior:"smooth",
-        block:"start"
-    });
-})
