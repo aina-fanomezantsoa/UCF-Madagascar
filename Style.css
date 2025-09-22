@@ -521,6 +521,75 @@ footer{
     justify-content: center;
     text-align: center;
 }
+
+/* --------Inscription------------ */
+.hero_txt{
+    color: black;
+}
+.inscription_hero{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 500px;
+}
+
+.admission{
+    width: 100%;
+    padding: 100px;
+}
+.admi_head{
+    padding-bottom: 30px;
+    border-bottom: 7px solid black;
+}
+.admi_title{
+    color: rgb(60, 179, 60);
+}
+.card_filiere{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.title_card{
+    font-size: 1.5em;
+    color: rgb(60, 179, 60);
+}
+.text_inscription{
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.567);
+}
+.filiere{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px;
+}
+.m_filiere{
+    padding: 50px;
+    border-radius: 1rem;
+    width: 600px;
+    text-align: center;
+    cursor: pointer;
+}
+.m_filiere:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.186);
+}
+.must{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.must_content{
+    padding: 0 50px;
+    border-left: 5px solid yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 @media (max-width: 1286px){
     .m_filiere{
         max-width: 500px;
@@ -597,6 +666,15 @@ footer{
     .uni{
         font-size: 1.2em;
     }
+    .admission{
+        padding: 50px;
+    }
+    .filiere_title{
+        font-size: 0.7em;
+    }
+    .filiere{
+        margin: 50px;
+    }
 }
 
 @media (max-width: 600px){
@@ -639,6 +717,7 @@ footer{
     .must_content{
         padding: 20px;
     }
+    
 }
 @media (max-width: 514px){
     .logo_parent{
@@ -659,11 +738,15 @@ footer{
     footer{
         padding: 50px;
     }
+    .filiere{
+        margin: 30px;
+    }
 }
 @media(max-width: 488px){
     .contact{
         padding: 50px 20px;
     }
+    
 }
 @media (max-width: 415px){
     .slogan{
@@ -687,76 +770,19 @@ footer{
     .contact_content{
         font-size: 0.8em;
     }
+    .filiere{
+        margin: 15px;
+        margin-bottom: 70px;
+    }
+    .hero_txt{
+        font-size: 2em;
+    }
+    .admission{
+        padding: 30px;
+    }
+    .m_filiere{
+        padding: 25px;
+    }
 }
 
 
-/* --------Inscription------------ */
-.hero_txt{
-    color: black;
-}
-.inscription_hero{
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 500px;
-}
-
-.admission{
-    padding-top: 30px;
-    width: 100%;
-    padding: 100px;
-}
-.admi_head{
-    padding-bottom: 30px;
-    border-bottom: 7px solid black;
-}
-.admi_title{
-    color: rgb(60, 179, 60);
-}
-.card_filiere{
-    padding: 50px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.title_card{
-    font-size: 1.5em;
-    color: rgb(60, 179, 60);
-}
-.text_inscription{
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.567);
-}
-.filiere{
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-    margin: 70px;
-    flex-wrap: wrap;
-}
-.m_filiere{
-    padding: 50px;
-    border-radius: 1rem;
-    width: 600px;
-    text-align: center;
-    cursor: pointer;
-}
-.m_filiere:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.186);
-}
-.must{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 100px;
-}
-.must_content{
-    padding: 0 50px;
-    border-left: 5px solid yellow;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
