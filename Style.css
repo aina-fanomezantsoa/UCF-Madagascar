@@ -6,6 +6,8 @@
 body{
     background: rgb(246, 245, 245);
     /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+
 }
 #my_popover{
     color: white;

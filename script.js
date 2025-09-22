@@ -23,3 +23,6 @@ send.addEventListener("click", ()=>{
     }
     
 })
+btnFormation.addEventListener("click", ()=>{
+    formation.scrollIntoView({behavior: "smooth"})
+})
